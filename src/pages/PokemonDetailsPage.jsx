@@ -30,7 +30,7 @@ function PokemonDetailsPage() {
 
   return (
     <div className="details-container">
-      <Link to="/" className="back-btn">&larr; Back to List</Link>
+      <Link to="/" className="back-btn">&larr; Back to Home</Link>
 
       <div className="detail-card">
         <h2>{pokemon.name.toUpperCase()}</h2>

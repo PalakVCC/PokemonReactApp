@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app-container">
       <nav className="navbar">
-        <Link to="/">Home</Link>
+        <Link to="/">Pokemon App</Link>
       </nav>
       <main>
         <Routes>
