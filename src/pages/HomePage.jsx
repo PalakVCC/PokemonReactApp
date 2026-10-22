@@ -14,7 +14,7 @@ function HomePage() {
         setPokemonList(response.data.results);
         setLoading(false);
       } catch (err) {
-        setError('Failed to load Pokémon list.');
+        setError('Failed to load Pokemon list.');
         setLoading(false);
       }
     };
@@ -22,12 +22,12 @@ function HomePage() {
     fetchPokemon();
   }, []);
 
-  if (loading) return <p className="status-msg">Loading Pokémon...</p>;
+  if (loading) return <p className="status-msg">Loading Pokemon...</p>;
   if (error) return <p className="status-msg error">{error}</p>;
 
   return (
     <div className="home-container">
-      <h1>Pokédex Explorer</h1>
+      <h1>Pokemon</h1>
       <div className="pokemon-grid">
         {pokemonList.map((pokemon) => {
           const urlParts = pokemon.url.split('/');
