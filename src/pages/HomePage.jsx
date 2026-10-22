@@ -10,7 +10,7 @@ function HomePage() {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=50');
+        const response = await axios.get('https://pokeapi.co/api/v2/pokemon/');
         setPokemonList(response.data.results);
         setLoading(false);
       } catch (err) {
@@ -26,7 +26,7 @@ function HomePage() {
   if (error) return <p className="status-msg error">{error}</p>;
 
   return (
-    <div className="home-container">
+    <div className="app-container">
       <h1>Pokemon</h1>
       <div className="pokemon-grid">
         {pokemonList.map((pokemon) => {
