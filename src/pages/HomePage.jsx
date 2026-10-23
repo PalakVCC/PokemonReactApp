@@ -27,7 +27,7 @@ function HomePage() {
 
   return (
     <div className="app-container">
-      <h1>Pokemon</h1>
+      <h1>Pokemons</h1>
       <div className="pokemon-grid">
         {pokemonList.map((pokemon) => {
           const urlParts = pokemon.url.split('/');
